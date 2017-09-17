@@ -1,1 +1,12 @@
-<h1>games!</h1>
+
+
+<div>
+  Showing most recent game first
+  <% @games.pending.recent.each do |game| %>
+    <div>
+      Game #<%= game.id %>
+      Current status: <%= game.status %>
+      <%= button_to "Join Game", game_path(game.id), method: :put, class: 'btn btn-default' %>
+    </div>
+  <% end %>
+</div>
