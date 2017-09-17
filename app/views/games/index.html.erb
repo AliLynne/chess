@@ -6,7 +6,7 @@
     <div>
       Game #<%= game.id %>
       Current status: <%= game.status %>
-      <%= button_to "Join Game", game_path(game.id), method: :put, class: 'btn btn-default' %>
+      <%= button_to "Join Game", game_path(game.id), method: :put, class: 'btn btn-primary btn-sm' %>
     </div>
   <% end %>
 </div>
